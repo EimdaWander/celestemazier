@@ -1,0 +1,90 @@
+.mainTitle{
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+	margin: 0;
+	font-size: 300%;
+}
+
+.name{
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+	margin: -25px 0px 0px 280px;
+}
+
+.titleHeader{
+	background-color: #14063a;
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #02021d;
+	color: #c3ceda;
+}
+
+.links{
+	text-align: center;
+	font-size: 120%;
+	padding: 10px 0px 20px 0px;
+	margin: 0px;
+	color: #c9d1d9;
+}
+
+a:visited {
+  color: lightblue;
+}
+
+a:hover{
+	color: royalblue;
+}
+
+.skillsTitle{
+	margin-left: 300px;
+	margin-right: 300px;
+	padding-left: 20px;
+	padding-top: 20px;
+	text-align: center;
+	font-size: 180%;
+	margin-top: 100px;
+}
+
+.skillsBody{
+	margin-left: 300px;
+	margin-right: 300px;
+	padding-left: 20px;
+	padding-top: 20px;
+	text-align: center;
+	font-size: 140%;
+}
+
+.mainMenuPart{
+	margin-left: 300px;
+	margin-right: 300px;
+	padding-left: 20px;
+	padding-top: 20px;
+	text-align: center;
+	font-size: 120%;
+}
+
+.masterList {
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 150%;
+}
+
+.pointList {
+  display: inline-block;
+  margin-right: 100px; /* add spacing between items */
+  margin-left: 70px;
+
+}
+
+.contactTitle{
+	text-align: center;
+	font-size: 180%;
+	margin-top: 100px;
+}

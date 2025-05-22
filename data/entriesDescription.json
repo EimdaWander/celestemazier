@@ -1,0 +1,133 @@
+{
+  "entries" : [
+    {
+      "title" : "The Old God's Priestess",
+      "description" : "Sunder is a project that I worked (am working) on for my 3rd and final year at the ESMA School of Toulouse. The project is a video game 1v1 multiplayer shooter that takes places in a desert, with both player having access to skills and the ability to claim beacons that are used for respawning if they die.<br><br> My own personal contribution to this project was coding the beacons and respawn system, as well as working on the Main Menu UI's code, and most notably the Settings of the game. <br><br> This was (is) the first project that I worked on in a group that wasn't interrupted by other things (aka, classes with teachers, unlike during my 2nd year), we went about it like a 'real' project, with R&D, pre-prod and production phases. <br><br> I do not think I had some particular difficulties, I didn't work on the networking of the game for exemple, the beacon being the only thing that I could qualify as unique in this project (as in, something that I likely wouldn't work on again after this project) since the UI and settings would be parts that I would most likely work on again in a futur project. And it (the beacon) wasn't the most difficult thing to make, even if I had to work with production constraint, since i couldn't modify some Blueprints as GitHub doesn't handle well Blueprints file (it overwrites the whole file and not just the parts that have been modified)",
+      "information" : [
+        "Ended",
+        "Solo",
+        "Study",
+        "Unity",
+        "C#",
+        "--/01/2023",
+        "--/05/2023"
+      ],
+      "entryImageIcon" : "",
+      "entryImageIconResolution" : [
+        "500px",
+        "500px"
+      ]
+    },
+    {
+      "title" : "Overtime",
+      "description" : "Sunder is a project that I worked (am working) on for my 3rd and final year at the ESMA School of Toulouse. The project is a video game 1v1 multiplayer shooter that takes places in a desert, with both player having access to skills and the ability to claim beacons that are used for respawning if they die.<br><br> My own personal contribution to this project was coding the beacons and respawn system, as well as working on the Main Menu UI's code, and most notably the Settings of the game. <br><br> This was (is) the first project that I worked on in a group that wasn't interrupted by other things (aka, classes with teachers, unlike during my 2nd year), we went about it like a 'real' project, with R&D, pre-prod and production phases. <br><br> I do not think I had some particular difficulties, I didn't work on the networking of the game for exemple, the beacon being the only thing that I could qualify as unique in this project (as in, something that I likely wouldn't work on again after this project) since the UI and settings would be parts that I would most likely work on again in a futur project. And it (the beacon) wasn't the most difficult thing to make, even if I had to work with production constraint, since i couldn't modify some Blueprints as GitHub doesn't handle well Blueprints file (it overwrites the whole file and not just the parts that have been modified)",
+      "information" : [
+        "Ended",
+        "Team",
+        "GameJam",
+        "Unity",
+        "C#",
+        "--/02/2023",
+        "--/02/2023"
+      ],
+      "entryImageIcon" : "",
+      "entryImageIconResolution" : [
+        "500px",
+        "500px"
+      ]
+    },
+    {
+      "title" : "Les Bermudes du Nauscilla",
+      "description" : "Sunder is a project that I worked (am working) on for my 3rd and final year at the ESMA School of Toulouse. The project is a video game 1v1 multiplayer shooter that takes places in a desert, with both player having access to skills and the ability to claim beacons that are used for respawning if they die.<br><br> My own personal contribution to this project was coding the beacons and respawn system, as well as working on the Main Menu UI's code, and most notably the Settings of the game. <br><br> This was (is) the first project that I worked on in a group that wasn't interrupted by other things (aka, classes with teachers, unlike during my 2nd year), we went about it like a 'real' project, with R&D, pre-prod and production phases. <br><br> I do not think I had some particular difficulties, I didn't work on the networking of the game for exemple, the beacon being the only thing that I could qualify as unique in this project (as in, something that I likely wouldn't work on again after this project) since the UI and settings would be parts that I would most likely work on again in a futur project. And it (the beacon) wasn't the most difficult thing to make, even if I had to work with production constraint, since i couldn't modify some Blueprints as GitHub doesn't handle well Blueprints file (it overwrites the whole file and not just the parts that have been modified)",
+      "information" : [
+        "Finished",
+        "Team",
+        "Study",
+        "Unreal Engine 5.4",
+        "Blueprints",
+        "--/08/2023",
+        "29/05/2024"
+      ],
+      "entryImageIcon" : "",
+      "entryImageIconResolution" : [
+        "500px",
+        "500px"
+      ]
+    },
+    {
+      "title" : "RATé",
+      "description" : "Sunder is a project that I worked (am working) on for my 3rd and final year at the ESMA School of Toulouse. The project is a video game 1v1 multiplayer shooter that takes places in a desert, with both player having access to skills and the ability to claim beacons that are used for respawning if they die.<br><br> My own personal contribution to this project was coding the beacons and respawn system, as well as working on the Main Menu UI's code, and most notably the Settings of the game. <br><br> This was (is) the first project that I worked on in a group that wasn't interrupted by other things (aka, classes with teachers, unlike during my 2nd year), we went about it like a 'real' project, with R&D, pre-prod and production phases. <br><br> I do not think I had some particular difficulties, I didn't work on the networking of the game for exemple, the beacon being the only thing that I could qualify as unique in this project (as in, something that I likely wouldn't work on again after this project) since the UI and settings would be parts that I would most likely work on again in a futur project. And it (the beacon) wasn't the most difficult thing to make, even if I had to work with production constraint, since i couldn't modify some Blueprints as GitHub doesn't handle well Blueprints file (it overwrites the whole file and not just the parts that have been modified)",
+      "information" : [
+        "Finished",
+        "Team",
+        "GameJam",
+        "Unreal Engine 5.4",
+        "Blueprints",
+        "--/02/2024",
+        "--/02/2024"
+      ],
+      "entryImageIcon" : "",
+      "entryImageIconResolution" : [
+        "500px",
+        "500px"
+      ]
+    },
+    {
+      "title" : "This Website Portfolio",
+      "description" : "This project is ... well, what you are currently seeing, this website. I had the want/need to make one for a bit, and with me being in my last year of my studies. I needed to make a portfolio, and then came the idea of making it from scratch, on my own. I can't say it was easy, as I had to learn HTML, CSS and Javascript with zero knowledge about them. But it is a fun project, that I am going to keep working on and upgrading, at least that's my plan for the forseeable future. <br><br> As I am writing this, I am still working on it, it's still a Work In Progress, I still have quite a bit to do, even if things are starting to take shape. But I'm enjoying it, even if it's taking time. I'll write something a bit more professional later as, well, I'm not going to publish it like that.",
+      "information" : [
+        "Ongoing",
+        "Solo",
+        "Personal/Pro",
+        "Browser",
+        "HTML, CSS, JS",
+        "20/08/2024",
+        "--/--/----"
+      ],
+      "entryImageIcon" : "",
+      "entryImageIconResolution" : [
+        "500px",
+        "500px"
+      ]
+    },
+    {
+      "title" : "Sunder",
+      "descron" : "Sunder is a project that I worked (am working) on for my 3rd and final year at the ESMA School of Toulouse. The project is a video game 1v1 multiplayer shooter that takes places in a desert, with both player having access to skills, like the whistle to ping the position of the other player, as well beacons that are scattered around the map that can be claimed and used as respawn point. The players uses a rifle that one shot the other player and they can slide down the sand to gain a speed boost.<br><br> My own personal contribution to this project was coding the beacons and respawn system, as well as working on the Main Menu UI's code, and most notably the Settings of the game. I have also some hand in debugging some parts of the game, as well as making the Players' movement more fluid.<br><br> This was (is) the first project that I worked on, in a group that wasn't interrupted by other things (classes with teachers, for exemple), we went about it like a 'real' project, with R&D, pre-prod and production phases. <br><br><img src=\"../images/default.png\" alt=\"Default Entry Image\" style=\"width:289px;height:414px;\" class=\"entryImageIcon\"><img src=\"../images/default.png\" alt=\"Default Entry Image\" style=\"width:289px;height:414px;\" class=\"entryImageIcon\"> <br><h3>My Work</h3><br> I do not think I had some particular difficulties during the development of the game and on what I worked on. The respawn system is something classic, as in, something that i'm probably bound to remake later in my life (as in, in a different project), the interesting part, I think, was mostly caused by production constraint, during the pre-production, I wasn't able to make modification on the Player's blueprint (because github do not like Blueprints), so I had to make a Actor Component where I put all of the code necessary to link, the player to the beacon and vice versa. <br> The respawn system, when a player died, would check if it had beacon in it's memory, if yes, it made the player respawn to the first beacon claimed that it has in memory, if it didn't have a beacon in memory, it would be game over for the player. <br><br> The beacons are a bit more developped and complexed than the respawn system, but once again, I do not think it was something very hard to make. The player would have the possibility to interact with one, while holding the button to interact, an animation would play out to make changes in the color of the beacon. <br>If the player complete the claiming process, the color (that matches the player's one) would be fix (unless the other player interact with it) and the player that claimed the beacon, would be able to use it whenever they died. Both player would also see day turning into night and the player that claimed the beacon, would enter hunt mode and see pings on the other player location. However, if the player didn't complete the claiming process, and just let go of the button mid-claim, the color of the beacon would decrease until it is empty (or the previous color it was)<br> The players also have the ability to steal the other's beacon, if a beacon has already been claimed by an other player, the player can steal it. The process is the same, aside that the player being robbed would lose the ability to use the beacon stollen as a respawn point. <br><br> I also worked on the UI of the game, well, mostly the Main Menu UI, and the pause menu. Not a lot to say, took me some time to make because I hadn't worked on UI in a while but overhaul, it works, it's nice and I didn't have to work with Multiplayer constraint so it was made even easier. I also worked on the settings of the game, also took a while, this time because I didn't know how it worked, so I had to learn on the fly, learn how to make game saves, and also how key mapping worked. Key mapping took a long time to figure out, and works differently compared to the other settings. The regular settings that i made are widgets (one for each type of option, is it a slider ? a checkbox ? a dropbox ?) where they get there function and title and when a player make a modification, it will be sent to the settings UI where the code is. However, the key mapping makes everything work in the widget made for key mapping, it just takes which key it is for as option. <br><br> <h3>Conclusion</h3>My first real video game project that I worked on and will see to fruition in a few. Nothing too complicated, aside from having to learn the multiplayer structure and how it worked, as well as learning how to make Settings and saving them. Overhaul more of a learning experience on how to work in a team rather than learning things for the project. Even if I did learn new things.",
+      "description" : [
+        "Sunder is a project that I worked (am working) on for my 3rd and final year at the ESMA School of Toulouse. The project is a video game 1v1 multiplayer shooter that takes places in a desert, with both player having access to skills, like the whistle to ping the position of the other player, as well beacons that are scattered around the map that can be claimed and used as respawn point. The players uses a rifle that one shot the other player and they can slide down the sand to gain a speed boost.",
+        "",
+        "",
+        "<br><br>My own personal contribution to this project was coding the beacons and respawn system, as well as working on the Main Menu UI code, the pause menu UI code and the settings UI code. I  also had some hand in debugging some parts of the game, and making the Players' movement more fluid.",
+        "",
+        "",
+        "<br><br>This was (is) the first project that I worked on, in a group that wasn't interrupted by other things (classes with teachers, for exemple), we went about it like a 'real' project, with R&D, pre-prod and production phases.",
+        "",
+        "",
+        "<br><br>I do not think I had some particular difficulties during the development of the game and on what I worked on. The respawn system is something classic, as in, something that i'm probably bound to remake later in my life (as in, in a different project), the interesting part, I think, was mostly caused by production constraint, during the pre-production, I wasn't able to make modification on the Player's blueprint (because github do not like Blueprints), so I had to make a Actor Component where I put all of the code necessary to link, the player to the beacon and vice versa. <br> The respawn system, when a player died, would check if it had beacon in it's memory, if yes, it made the player respawn to the first beacon claimed that it has in memory, if it didn't have a beacon in memory, it would be game over for the player.",
+        "",
+        "",
+        "<br><br>The beacons are a bit more developped and complexed than the respawn system, but once again, I do not think it was something very hard to make. The player would have the possibility to interact with one, while holding the button to interact, an animation would play out to make changes in the color of the beacon. <br>If the player complete the claiming process, the color (that matches the player's one) would be fix (unless the other player interact with it) and the player that claimed the beacon, would be able to use it whenever they died. Both player would also see day turning into night and the player that claimed the beacon, would enter hunt mode and see pings on the other player location. However, if the player didn't complete the claiming process, and just let go of the button mid-claim, the color of the beacon would decrease until it is empty (or the previous color it was)<br> The players also have the ability to steal the other's beacon, if a beacon has already been claimed by an other player, the player can steal it. The process is the same, aside that the player being robbed would lose the ability to use the beacon stollen as a respawn point.",
+        "",
+        "",
+        "<br><br>I also worked on the UI of the game, well, mostly the Main Menu UI, and the pause menu. Not a lot to say, took me some time to make because I hadn't worked on UI in a while but overhaul, it works, it's nice and I didn't have to work with Multiplayer constraint so it was made even easier. I also worked on the settings of the game, also took a while, this time because I didn't know how it worked, so I had to learn on the fly, learn how to make game saves, and also how key mapping worked. Key mapping took a long time to figure out, and works differently compared to the other settings. The regular settings that i made are widgets (one for each type of option, is it a slider ? a checkbox ? a dropbox ?) where they get there function and title and when a player make a modification, it will be sent to the settings UI where the code is. However, the key mapping makes everything work in the widget made for key mapping, it just takes which key it is for as option.",
+        "",
+        "",
+        "<br><br><h3>Conclusion</h3> My first real video game project that I worked on and will see to fruition in a few. Nothing too complicated, aside from having to learn the multiplayer structure and how it worked, as well as learning how to make Settings and saving them. Overhaul more of a learning experience on how to work in a team rather than learning things for the project. Even if I did learn new things.",
+        "",
+        ""
+      ],
+      "information" : [
+        "Ongoing",
+        "Team",
+        "Study/Pro",
+        "Unreal Engine 5.4",
+        "Blueprints",
+        "07/10/2024",
+        "--/--/----"
+      ],
+      "entryImageIcon" : "<img src=\"../images/sunderPoster.png\" alt=\"Default Entry Image\" style=\"width:289px;height:414px;\" id=\"entryImageIcon\">"
+    }
+  ]
+}
+
+

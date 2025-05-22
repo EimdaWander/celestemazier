@@ -1,0 +1,86 @@
+.mainTitle{
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+	margin: 0;
+	font-size: 300%;
+}
+
+.name{
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+	margin: -25px 0px 0px 280px;
+}
+
+.titleHeader{
+	background-color: #14063a;
+	margin: 0px;
+	padding: 0px;
+}
+
+.links{
+	text-align: center;
+	font-size: 120%;
+	padding: 10px 0px 20px 0px;
+	margin: 0px;
+	color: #c9d1d9;
+}
+
+a:visited {
+  color: lightblue;
+}
+
+a:hover{
+	color: royalblue;
+}
+
+.updateMenu{
+	border-left: 400px solid #330033;
+  	height: 120vh;
+  	position: absolute;
+  	margin-left: 50px;
+}
+
+.mainMenuPart{
+	margin-left: 300px;
+	margin-right: 300px;
+	padding-left: 20px;
+	padding-top: 20px;
+	text-align: center;
+	font-size: 150%;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #02021d;
+	color: #c3ceda;
+}
+
+.updateButton{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #990099;
+	color: black;
+	width: 360px;
+	border: none;
+	outline: none;
+	text-align: left;
+	cursor: pointer;
+	transition: 0.3s;
+	font-size: 120%;
+}
+
+.updateList{
+	width: 100%;
+	overflow: auto;
+	margin: 20px 0px 0px -380px;
+	padding: 0px 500px 0px 0px;
+}
+
+.no-bullet{
+	list-style-type: none;
+	width: 100%;
+	overflow: auto;
+	height: 100%;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio - Projects</title>
+	<link rel="stylesheet" type="text/css" href="../styles/portfolioProject_Style.css">
+</head>
+<body onload="setDefault()">
+	<header>
+		<div class="titleHeader">
+			<h1 class="mainTitle">Portfolio</h1>
+			<section class="name">by Céleste M.</section>
+			<nav class="links">
+				<a href="../index.html">Home</a>
+				-
+				Project
+				-
+				<a href="../aboutme.html">About Me</a>
+			</nav>
+		</div>
+	</header>
+	
+	<div class="updateMenu">
+		<ul class="updateList">
+			<li class="no-bullet">
+				<button type="Button" class="updateButton" value="5" onclick="setEntry(5, 0)">Default Button Title<br>Default Button Date</button>
+				<button type="Button" class="updateButton" value="4" onclick="setEntry(4, 1)">Default Button Title<br>Default Button Date</button>
+				<!-- <button type="Button" class="updateButton" value="3" onclick="setEntry(3, 2)">Default Button Title<br>Default Button Date</button>
+				<button type="Button" class="updateButton" value="2" onclick="setEntry(2, 3)">Default Button Title<br>Default Button Date</button> 	
+				<button type="Button" class="updateButton" value="1" onclick="setEntry(1, 4)">Default Button Title<br>Default Button Date</button>
+				<button type="Button" class="updateButton" value="0" onclick="setEntry(0, 5)">Default Button Title<br>Default Button Date</button> -->
+			</li>
+		</ul>
+	</div>
+	<div>
+		<section class="info">
+				<ul>
+					<li class="infoList" id="statusText">Status : Default </li>
+					<li class="infoList" id="teamText">Team : Default</li>
+					<li class="infoList" id="typeText">Type : Default</li>
+					<li class="infoList" id="plateformText">Plateform : Default</li>
+					<li class="infoList" id="languageText">Language : Default</li>
+					<li class="infoList" id="startText">Started : Default</li>
+					<li class="infoList" id="endText">Ended : Default</li>
+
+				</ul>
+				<div id="entryImageIconContainer">
+					<img src="../images/default.png" alt="Default Entry Image" style="width:289px;height:414px;" id="entryImageIcon">
+				</div>				
+			</section>
+		<main class="mainMenuPart">
+			</section>
+			<header class="titleMainPart" id="titleText">
+				Default Title Text
+			</header>
+			<div id="descriptionText">
+				Default Desc Text
+			</div>
+			
+
+		</main>
+		<script>
+			function setEntry(entryNumber, buttonID){
+				fetch("../data/entriesDescription.json")
+					.then(response => response.json())
+					.then(data =>{
+						setData(data, entryNumber, buttonID);
+					})		
+			}
+			function setData(obj, entryNumber, buttonID){
+				const targetBodyDesc = document.querySelector('#descriptionText');
+				const targetStatus = document.querySelector('#statusText');
+				const targetTeam = document.querySelector('#teamText');
+				const targetType = document.querySelector('#typeText');
+				const targetPlateform = document.querySelector('#plateformText');
+				const targetLanguage = document.querySelector('#languageText');
+				const targetStart = document.querySelector('#startText');
+				const targetEnd = document.querySelector('#endText');
+				const targetTitle = document.querySelector('#titleText');
+				const targetImage = document.querySelector('#entryImageIconContainer');
+
+				const buttonList = document.querySelectorAll('.updateButton');
+
+				
+				//Change the button color depending on what button is clicked. 
+				buttonList.forEach(element => {
+					element.style.backgroundColor = "#7e9b9e";
+				});
+				buttonList[buttonID].style.backgroundColor = "#c3ceda";
+
+				//Get all description data and put it in a variable
+				descListLenght = obj.entries[entryNumber].description.length;
+				if(descListLenght%3 != 0){
+					throw new Error("Data description error 003");
+				}
+				descDataAll = "";
+				for(i=0; i<descListLenght-1; i=i+3){
+					descDataAll = descDataAll + obj.entries[entryNumber].description[i];
+					descDataAll = descDataAll + obj.entries[entryNumber].description[i+1];
+					descDataAll = descDataAll + obj.entries[entryNumber].description[i+2];
+				}
+
+
+				targetBodyDesc.innerHTML = descDataAll;
+				targetStatus.innerHTML = "Status : " + obj.entries[entryNumber].information[0];
+				targetTeam.innerHTML = "Team : " + obj.entries[entryNumber].information[1];
+				targetType.innerHTML = "Type : " + obj.entries[entryNumber].information[2];
+				targetPlateform.innerHTML = "Plateform : " + obj.entries[entryNumber].information[3];
+				targetLanguage.innerHTML = "Language : " + obj.entries[entryNumber].information[4];
+				targetStart.innerHTML = "Started : " + obj.entries[entryNumber].information[5];
+				targetEnd.innerHTML = "Ended : " + obj.entries[entryNumber].information[6];
+				targetTitle.innerHTML = obj.entries[entryNumber].title;
+				targetImage.innerHTML = obj.entries[entryNumber].entryImageIcon;
+			}
+			function setDefault(){
+				var jsonLenght
+				fetch('../data/entriesDescription.json')
+					.then(response => response.json())
+					.then(data =>{
+						jsonLenght = Object.keys(data.entries).length-1;
+						setButtonInfo(data);
+						setEntry(jsonLenght, 0	);
+					}) 
+			}
+			function setButtonInfo(obj){
+				const buttonList = document.querySelectorAll('.updateButton'); 
+				buttonList.forEach(element => {
+					element.style.backgroundColor = "#7e9b9e";
+					element.innerHTML = obj.entries[Number(element.getAttribute("value"))].title + "<br>" + obj.entries[Number(element.getAttribute("value"))].information[5] + " | " + obj.entries[Number(element.getAttribute("value"))].information[6];
+				});
+			}
+		</script>
+	</div>
+</body>
+</html>
