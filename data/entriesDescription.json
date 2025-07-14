@@ -16,7 +16,8 @@
       "entryImageIconResolution" : [
         "500px",
         "500px"
-      ]
+      ],
+      "highlighed" : false
     },
     {
       "title" : "Overtime",
@@ -34,7 +35,8 @@
       "entryImageIconResolution" : [
         "500px",
         "500px"
-      ]
+      ],
+      "highlighed" : false
     },
     {
       "title" : "Les Bermudes du Nauscilla",
@@ -52,7 +54,8 @@
       "entryImageIconResolution" : [
         "500px",
         "500px"
-      ]
+      ],
+      "highlighed" : false
     },
     {
       "title" : "RATé",
@@ -70,7 +73,8 @@
       "entryImageIconResolution" : [
         "500px",
         "500px"
-      ]
+      ],
+      "highlighed" : false
     },
     {
       "title" : "This Website Portfolio",
@@ -88,7 +92,8 @@
       "entryImageIconResolution" : [
         "500px",
         "500px"
-      ]
+      ],
+      "highlighed" : true
     },
     {
       "title" : "Sunder",
@@ -105,7 +110,7 @@
         "<br><br>I do not think I had some particular difficulties during the development of the game and on what I worked on. The respawn system is something classic, as in, something that i'm probably bound to remake later in my life (as in, in a different project), the interesting part, I think, was mostly caused by production constraint, during the pre-production, I wasn't able to make modification on the Player's blueprint (because github do not like Blueprints), so I had to make a Actor Component where I put all of the code necessary to link, the player to the beacon and vice versa. <br> The respawn system, when a player died, would check if it had beacon in it's memory, if yes, it made the player respawn to the first beacon claimed that it has in memory, if it didn't have a beacon in memory, it would be game over for the player.",
         "",
         "",
-        "<br><br>The beacons are a bit more developped and complexed than the respawn system, but once again, I do not think it was something very hard to make. The player would have the possibility to interact with one, while holding the button to interact, an animation would play out to make changes in the color of the beacon. <br>If the player complete the claiming process, the color (that matches the player's one) would be fix (unless the other player interact with it) and the player that claimed the beacon, would be able to use it whenever they died. Both player would also see day turning into night and the player that claimed the beacon, would enter hunt mode and see pings on the other player location. However, if the player didn't complete the claiming process, and just let go of the button mid-claim, the color of the beacon would decrease until it is empty (or the previous color it was)<br> The players also have the ability to steal the other's beacon, if a beacon has already been claimed by an other player, the player can steal it. The process is the same, aside that the player being robbed would lose the ability to use the beacon stollen as a respawn point.",
+        "<br><br>The beacons are a bit more developped and complexed than the respawn system, but once again, I do not think it was something very hard to make. The player would have the possibility to interact with one, while holding the button to interact, an animation would play out to make changes in the color of the beacon. <br>If the player complete the claiming process, the color (that matches the player's one) would be fixex (unless the other player interact with it) and the player that claimed the beacon, would be able to use it whenever they died. Both player would also see day turning into night and the player that claimed the beacon, would enter hunt mode and see pings on the other player location. However, if the player didn't complete the claiming process, and just let go of the button mid-claim, the color of the beacon would decrease until it is empty (or the previous color it was)<br> The players also have the ability to steal the other's beacon, if a beacon has already been claimed by an other player, the player can steal it. The process is the same, aside that the player being robbed would lose the ability to use the beacon stollen as a respawn point.",
         "",
         "",
         "<br><br>I also worked on the UI of the game, well, mostly the Main Menu UI, and the pause menu. Not a lot to say, took me some time to make because I hadn't worked on UI in a while but overhaul, it works, it's nice and I didn't have to work with Multiplayer constraint so it was made even easier. I also worked on the settings of the game, also took a while, this time because I didn't know how it worked, so I had to learn on the fly, learn how to make game saves, and also how key mapping worked. Key mapping took a long time to figure out, and works differently compared to the other settings. The regular settings that i made are widgets (one for each type of option, is it a slider ? a checkbox ? a dropbox ?) where they get there function and title and when a player make a modification, it will be sent to the settings UI where the code is. However, the key mapping makes everything work in the widget made for key mapping, it just takes which key it is for as option.",
@@ -116,15 +121,16 @@
         ""
       ],
       "information" : [
-        "Ongoing",
+        "Completed",
         "Team",
         "Study/Pro",
         "Unreal Engine 5.4",
         "Blueprints",
         "07/10/2024",
-        "--/--/----"
+        "20/06/2025"
       ],
-      "entryImageIcon" : "<img src=\"../images/sunderPoster.png\" alt=\"Default Entry Image\" style=\"width:289px;height:414px;\" id=\"entryImageIcon\">"
+      "entryImageIcon" : "<img src=\"../images/sunderPoster.png\" alt=\"Default Entry Image\" style=\"width:289px;height:414px;\" id=\"entryImageIcon\">",
+      "highlighed" : true
     }
   ]
 }

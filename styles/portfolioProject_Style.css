@@ -122,3 +122,16 @@ body{
 #descriptionText{
 	padding-bottom: 50px;
 }
+
+.HighLightButton{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #7e9b9e;
+	color: black;
+	cursor: pointer;
+	transition: 0.3s;
+	font-size: 100%;
+	text-align: center;
+	outline: none;
+}

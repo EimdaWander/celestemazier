@@ -25,12 +25,13 @@
 	<div class="updateMenu">
 		<ul class="updateList">
 			<li class="no-bullet">
+				<button type="button" class="HighLightButton" onclick="toggleHighLight()">Default Highlight Text</button>
 				<button type="Button" class="updateButton" value="5" onclick="setEntry(5, 0)">Default Button Title<br>Default Button Date</button>
 				<button type="Button" class="updateButton" value="4" onclick="setEntry(4, 1)">Default Button Title<br>Default Button Date</button>
-				<!-- <button type="Button" class="updateButton" value="3" onclick="setEntry(3, 2)">Default Button Title<br>Default Button Date</button>
+				<button type="Button" class="updateButton" value="3" onclick="setEntry(3, 2)">Default Button Title<br>Default Button Date</button>
 				<button type="Button" class="updateButton" value="2" onclick="setEntry(2, 3)">Default Button Title<br>Default Button Date</button> 	
 				<button type="Button" class="updateButton" value="1" onclick="setEntry(1, 4)">Default Button Title<br>Default Button Date</button>
-				<button type="Button" class="updateButton" value="0" onclick="setEntry(0, 5)">Default Button Title<br>Default Button Date</button> -->
+				<button type="Button" class="updateButton" value="0" onclick="setEntry(0, 5)">Default Button Title<br>Default Button Date</button>
 			</li>
 		</ul>
 	</div>
@@ -62,6 +63,7 @@
 
 		</main>
 		<script>
+			var highLightStatus = false;
 			function setEntry(entryNumber, buttonID){
 				fetch("../data/entriesDescription.json")
 					.then(response => response.json())
@@ -122,6 +124,7 @@
 						jsonLenght = Object.keys(data.entries).length-1;
 						setButtonInfo(data);
 						setEntry(jsonLenght, 0	);
+						toggleHighLight();
 					}) 
 			}
 			function setButtonInfo(obj){
@@ -130,6 +133,34 @@
 					element.style.backgroundColor = "#7e9b9e";
 					element.innerHTML = obj.entries[Number(element.getAttribute("value"))].title + "<br>" + obj.entries[Number(element.getAttribute("value"))].information[5] + " | " + obj.entries[Number(element.getAttribute("value"))].information[6];
 				});
+			}
+			function toggleHighLight(){
+				fetch("../data/entriesDescription.json")
+					.then(response => response.json())
+					.then(data =>{
+						changeHighLightStatus(data);
+					})	
+			}
+			function changeHighLightStatus(obj){
+				const buttonList = document.querySelectorAll('.updateButton');
+				const highLightButton = document.querySelector('.HighLightButton');
+				highLightStatus = !highLightStatus;
+				buttonList.forEach(element =>{
+					if (highLightStatus){
+						if (!(obj.entries[Number(element.getAttribute("value"))].highlighed)){
+							element.style.display = "none"; 
+						}
+						highLightButton.innerHTML = "Only Highlighted Projects";
+					}
+					else{
+						if (!(obj.entries[Number(element.getAttribute("value"))].highlighed)){
+							element.style.display = "flex"; 
+
+						}
+						highLightButton.innerHTML = "All Projects";
+					}
+					
+				});		
 			}
 		</script>
 	</div>
