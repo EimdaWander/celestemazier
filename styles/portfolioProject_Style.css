@@ -3,18 +3,21 @@
 	padding: 0px 0px 0px 0px;
 	margin: 0;
 	font-size: 300%;
+	color: #c9d1d9;
 }
 
 .name{
 	text-align: center;
 	padding: 0px 0px 0px 0px;
 	margin: -25px 0px 0px 280px;
+	color: #c9d1d9;
 }
 
 .titleHeader{
-	background-color: #14063a;
+	background-color: #181818;
 	margin: 0px;
 	padding: 0px;
+	z-index: 2;
 }
 
 .links{
@@ -38,35 +41,31 @@
 .titleMainPart{
 	font-size: 150%;
 	margin-bottom: 15px;
+	text-align: center;
 }
 
 a:visited {
-  color: lightblue;
+  	color: lightblue;
 }
 
 a:hover{
 	color: royalblue;
 }
 
-
-html{
-	height: 100%;
-}
-
 body{
 	margin: 0;
 	padding: 0;
-	background-color: #02021d;
-	color: #c3ceda;
-	height: 100%;
+	background-color: #d6d6d6;
+	color: #000000;
 }
 
-.updateMenu{
-	border-left: 400px solid #120831;
+#updateMenu{
+	border-left: 400px solid #424242;
   	position: absolute;
   	margin-left: 50px;
 	margin-bottom: 0;
-	min-height: 100%
+	height: 100%;
+	z-index: 1;
 }
 
 .updateButton{
@@ -134,4 +133,43 @@ body{
 	font-size: 100%;
 	text-align: center;
 	outline: none;
+}
+
+/*Mostly for the bottom part of the screen*/
+.masterList {
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 150%;
+}
+
+.pointList {
+  display: inline-block;
+  margin-right: 100px; /* add spacing between items */
+  margin-left: 70px;
+
+}
+
+.contactTitle{
+	text-align: center;
+	font-size: 180%;
+}
+
+
+.bottomPage{
+	background-color: #181818;
+	margin: 0px;
+	padding: 0px;
+	color: #c9d1d9;
+	width: 100%;
+	position: relative;
+	z-index: 2;
+}
+
+.site{
+	min-height: 100dvh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: minmax(0, 1fr);
 }

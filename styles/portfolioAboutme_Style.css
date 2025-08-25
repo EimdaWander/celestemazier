@@ -3,16 +3,18 @@
 	padding: 0px 0px 0px 0px;
 	margin: 0;
 	font-size: 300%;
+	color: #c9d1d9;
 }
 
 .name{
 	text-align: center;
 	padding: 0px 0px 0px 0px;
 	margin: -25px 0px 0px 280px;
+	color: #c9d1d9;
 }
 
 .titleHeader{
-	background-color: #14063a;
+	background-color: #181818;
 	margin: 0px;
 	padding: 0px;
 }
@@ -20,8 +22,8 @@
 body{
 	margin: 0;
 	padding: 0;
-	background-color: #02021d;
-	color: #c3ceda;
+	background-color: #d6d6d6;
+	color: #000000;
 }
 
 .links{
@@ -68,6 +70,7 @@ a:hover{
 	font-size: 120%;
 }
 
+/*Mostly for the bottom part of the screen*/
 .masterList {
   list-style: none;
   align-items: center;
@@ -86,5 +89,20 @@ a:hover{
 .contactTitle{
 	text-align: center;
 	font-size: 180%;
-	margin-top: 100px;
+}
+
+
+.bottomPage{
+	background-color: #181818;
+	margin: 0px;
+	padding: 0px;
+	color: #c9d1d9;
+	width: 100%;
+}
+
+.site{
+	min-height: 100dvh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: minmax(0, 1fr);
 }

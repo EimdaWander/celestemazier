@@ -3,16 +3,18 @@
 	padding: 0px 0px 0px 0px;
 	margin: 0;
 	font-size: 300%;
+	color: #c9d1d9;
 }
 
 .name{
 	text-align: center;
 	padding: 0px 0px 0px 0px;
 	margin: -25px 0px 0px 280px;
+	color: #c9d1d9;
 }
 
 .titleHeader{
-	background-color: #14063a;
+	background-color: #181818;
 	margin: 0px;
 	padding: 0px;
 }
@@ -34,7 +36,7 @@ a:hover{
 }
 
 .updateMenu{
-	border-left: 400px solid #330033;
+	border-left: 400px solid #ffffff;
   	height: 120vh;
   	position: absolute;
   	margin-left: 50px;
@@ -45,6 +47,7 @@ a:hover{
 	margin-right: 300px;
 	padding-left: 20px;
 	padding-top: 20px;
+	padding-bottom: 35px;
 	text-align: center;
 	font-size: 150%;
 }
@@ -52,15 +55,15 @@ a:hover{
 body{
 	margin: 0;
 	padding: 0;
-	background-color: #02021d;
-	color: #c3ceda;
+	background-color: #d6d6d6;
+	color: #000000;
 }
 
 .updateButton{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #990099;
+	background-color: #ffffff;
 	color: black;
 	width: 360px;
 	border: none;
@@ -83,4 +86,41 @@ body{
 	width: 100%;
 	overflow: auto;
 	height: 100%;
+}
+
+/*Mostly for the bottom part of the screen*/
+.masterList {
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 150%;
+}
+
+.pointList {
+  display: inline-block;
+  margin-right: 100px; /* add spacing between items */
+  margin-left: 70px;
+
+}
+
+.contactTitle{
+	text-align: center;
+	font-size: 180%;
+}
+
+
+.bottomPage{
+	background-color: #181818;
+	margin: 0px;
+	padding: 0px;
+	color: #c9d1d9;
+	width: 100%;
+}
+
+.site{
+	min-height: 100dvh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: minmax(0, 1fr);
 }

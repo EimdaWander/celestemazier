@@ -8,35 +8,35 @@
 	<link rel="stylesheet" type="text/css" href="../styles/portfolioProject_Style.css">
 </head>
 <body onload="setDefault()">
-	<header>
-		<div class="titleHeader">
-			<h1 class="mainTitle">Portfolio</h1>
-			<section class="name">by Céleste M.</section>
-			<nav class="links">
-				<a href="../index.html">Home</a>
-				-
-				Project
-				-
-				<a href="../aboutme.html">About Me</a>
-			</nav>
-		</div>
-	</header>
-	
-	<div class="updateMenu">
-		<ul class="updateList">
-			<li class="no-bullet">
-				<button type="button" class="HighLightButton" onclick="toggleHighLight()">Default Highlight Text</button>
-				<button type="Button" class="updateButton" value="5" onclick="setEntry(5, 0)">Default Button Title<br>Default Button Date</button>
-				<button type="Button" class="updateButton" value="4" onclick="setEntry(4, 1)">Default Button Title<br>Default Button Date</button>
-				<button type="Button" class="updateButton" value="3" onclick="setEntry(3, 2)">Default Button Title<br>Default Button Date</button>
-				<button type="Button" class="updateButton" value="2" onclick="setEntry(2, 3)">Default Button Title<br>Default Button Date</button> 	
-				<button type="Button" class="updateButton" value="1" onclick="setEntry(1, 4)">Default Button Title<br>Default Button Date</button>
-				<button type="Button" class="updateButton" value="0" onclick="setEntry(0, 5)">Default Button Title<br>Default Button Date</button>
-			</li>
-		</ul>
-	</div>
-	<div>
-		<section class="info">
+	<div class="site">
+		<header>
+			<div class="titleHeader">
+				<h1 class="mainTitle">Portfolio</h1>
+				<section class="name">by Céleste M.</section>
+				<nav class="links">
+					<a href="../index.html">Home</a>
+					-
+					Project
+					-
+					<a href="../aboutme.html">About Me</a>
+				</nav>
+			</div>
+		</header>
+		<main id="mainBody">
+			<div id="updateMenu">
+				<ul class="updateList">
+					<li class="no-bullet">
+						<button type="button" class="HighLightButton" onclick="toggleHighLight()">Default Highlight Text</button>
+						<button type="Button" class="updateButton" value="5" onclick="setEntry(5, 0)">Default Button Title<br>Default Button Date</button>
+						<button type="Button" class="updateButton" value="4" onclick="setEntry(4, 1)">Default Button Title<br>Default Button Date</button>
+						<button type="Button" class="updateButton" value="3" onclick="setEntry(3, 2)">Default Button Title<br>Default Button Date</button>
+						<button type="Button" class="updateButton" value="2" onclick="setEntry(2, 3)">Default Button Title<br>Default Button Date</button> 	
+						<button type="Button" class="updateButton" value="1" onclick="setEntry(1, 4)">Default Button Title<br>Default Button Date</button>
+						<button type="Button" class="updateButton" value="0" onclick="setEntry(0, 5)">Default Button Title<br>Default Button Date</button>
+					</li>
+				</ul>
+			</div>
+			<section class="info">
 				<ul>
 					<li class="infoList" id="statusText">Status : Default </li>
 					<li class="infoList" id="teamText">Team : Default</li>
@@ -51,143 +51,166 @@
 					<img src="../images/default.png" alt="Default Entry Image" style="width:289px;height:414px;" id="entryImageIcon">
 				</div>				
 			</section>
-		<main class="mainMenuPart">
+			<section class="mainMenuPart">
+				<header class="titleMainPart" id="titleText">
+					Default Title Text
+				</header>
+				<div id="descriptionText">
+					Default Desc Text
+				</div>
 			</section>
-			<header class="titleMainPart" id="titleText">
-				Default Title Text
-			</header>
-			<div id="descriptionText">
-				Default Desc Text
-			</div>
-			
-
 		</main>
-		<script>
-			var highLightStatus = false;
-			//Get the Json file then call SetData with and giving it the file
-			function setEntry(entryNumber, buttonID){
-				fetch("../data/entriesDescription.json")
-					.then(response => response.json())
-					.then(data =>{
-						setData(data, entryNumber, buttonID);
-					})		
+		<footer class="bottomPage">
+			<h1 class="contactTitle">Contacts and Links</h1>
+			<ul class="masterList">
+				<li class="pointList">
+					Email : cel.mazier@gmail.com
+				</li>
+				<li class="pointList">
+					<a href="https://github.com/EimdaWander">Github</a>
+				</li>
+				<li class="pointList">
+					<a href="https://eimdawander.itch.io">Itch.io</a>
+				</li>
+			</ul>
+		</footer>
+	</div>
+	<!--SCRIPT SECTION-->
+	<script>
+		var highLightStatus = false;
+		//Get the Json file then call SetData with and giving it the file
+		function setEntry(entryNumber, buttonID){
+			fetch("../data/entriesDescription.json")
+				.then(response => response.json())
+				.then(data =>{
+					setData(data, entryNumber, buttonID);
+				})		
+		}
+		//Function to set the data in an entry
+		function setData(obj, entryNumber, buttonID){
+			const targetBodyDesc = document.querySelector('#descriptionText');
+			const targetStatus = document.querySelector('#statusText');
+			const targetTeam = document.querySelector('#teamText');
+			const targetType = document.querySelector('#typeText');
+			const targetPlateform = document.querySelector('#plateformText');
+			const targetLanguage = document.querySelector('#languageText');
+			const targetStart = document.querySelector('#startText');
+			const targetEnd = document.querySelector('#endText');
+			const targetTitle = document.querySelector('#titleText');
+			const targetImage = document.querySelector('#entryImageIconContainer');
+
+			const targetMainBody = document.querySelector('#mainBody');
+			const targetUpdateMenu = document.querySelector('#updateMenu');
+
+			const buttonList = document.querySelectorAll('.updateButton');
+
+			
+			//Set every button's color to the base one then Change the color that has been clicked. 
+			buttonList.forEach(element => {
+				element.style.backgroundColor = "#7e9b9e";
+			});
+			buttonList[buttonID].style.backgroundColor = "#c3ceda";
+
+			//Get all description data and put it in a variable to populate the description of the entry
+			descListLenght = obj.entries[entryNumber].description.length;
+			//Check 
+			if(descListLenght%3 != 0){
+				throw new Error("Data description error 003");
 			}
-			//Function to set the data in an entry
-			function setData(obj, entryNumber, buttonID){
-				const targetBodyDesc = document.querySelector('#descriptionText');
-				const targetStatus = document.querySelector('#statusText');
-				const targetTeam = document.querySelector('#teamText');
-				const targetType = document.querySelector('#typeText');
-				const targetPlateform = document.querySelector('#plateformText');
-				const targetLanguage = document.querySelector('#languageText');
-				const targetStart = document.querySelector('#startText');
-				const targetEnd = document.querySelector('#endText');
-				const targetTitle = document.querySelector('#titleText');
-				const targetImage = document.querySelector('#entryImageIconContainer');
-
-				const buttonList = document.querySelectorAll('.updateButton');
-
-				
-				//Set every button's color to the base one then Change the color that has been clicked. 
-				buttonList.forEach(element => {
-					element.style.backgroundColor = "#7e9b9e";
-				});
-				buttonList[buttonID].style.backgroundColor = "#c3ceda";
-
-				//Get all description data and put it in a variable to populate the description of the entry
-				descListLenght = obj.entries[entryNumber].description.length;
-				//Check 
-				if(descListLenght%3 != 0){
-					throw new Error("Data description error 003");
-				}
-				descDataAll = "";
-				//Goes trough the entire Array of the Description part of the Json (depending on the given entry)
-				//Goes by increments of 3 since the JSon is Setup with a lign for the text and two lignes for a possible image. 
-				for(i=0; i<descListLenght-1; i=i+3){
-					//Adds the text to the variable
-					descDataAll = descDataAll + obj.entries[entryNumber].description[i];
-					//Check if the image value is empty or not for the first or second image slot. If yes add a space after the text
-					if (!(obj.entries[entryNumber].description[i+1] == "") || !(obj.entries[entryNumber].description[i+2] == "")){
-						descDataAll = descDataAll + "<br><br>";
-						if (!(obj.entries[entryNumber].description[i+1] == "") && !(obj.entries[entryNumber].description[i+2] == "")){
-							descDataAll = descDataAll + obj.entries[entryNumber].description[i+1] + "	" + obj.entries[entryNumber].description[i+2];
-						}
-						else if (!(obj.entries[entryNumber].description[i+1] == "")){
-							descDataAll = descDataAll + obj.entries[entryNumber].description[i+1];
-						}
-						else{
-							descDataAll = descDataAll + obj.entries[entryNumber].description[i+2];
-						}
-					}
-					//Add a space after the text and images
+			descDataAll = "";
+			//Goes trough the entire Array of the Description part of the Json (depending on the given entry)
+			//Goes by increments of 3 since the JSon is Setup with a lign for the text and two lignes for a possible image. 
+			for(i=0; i<descListLenght-1; i=i+3){
+				//Adds the text to the variable
+				descDataAll = descDataAll + obj.entries[entryNumber].description[i];
+				//Check if the image value is empty or not for the first or second image slot. If yes add a space after the text
+				if (!(obj.entries[entryNumber].description[i+1] == "") || !(obj.entries[entryNumber].description[i+2] == "")){
 					descDataAll = descDataAll + "<br><br>";
-				}
-
-				//Set each data of the entry
-				targetBodyDesc.innerHTML = descDataAll;
-				targetStatus.innerHTML = "Status : " + obj.entries[entryNumber].information[0];
-				targetTeam.innerHTML = "Team : " + obj.entries[entryNumber].information[1];
-				targetType.innerHTML = "Type : " + obj.entries[entryNumber].information[2];
-				targetPlateform.innerHTML = "Plateform : " + obj.entries[entryNumber].information[3];
-				targetLanguage.innerHTML = "Language : " + obj.entries[entryNumber].information[4];
-				targetStart.innerHTML = "Started : " + obj.entries[entryNumber].information[5];
-				targetEnd.innerHTML = "Ended : " + obj.entries[entryNumber].information[6];
-				targetTitle.innerHTML = obj.entries[entryNumber].title;
-				targetImage.innerHTML = obj.entries[entryNumber].entryImageIcon;
-			}
-			//Get the JSON data and call SetButtonInfo, setEntry, toggleHighlight.
-			function setDefault(){
-				var jsonLenght
-				fetch('../data/entriesDescription.json')
-					.then(response => response.json())
-					.then(data =>{
-						jsonLenght = Object.keys(data.entries).length-1;
-						setButtonInfo(data);
-						setEntry(jsonLenght, 0	);
-						changeHighLightStatus(data);
-					}) 
-			}
-			//Set every buttons Data, name and dates
-			function setButtonInfo(obj){
-				const buttonList = document.querySelectorAll('.updateButton'); 
-				buttonList.forEach(element => {
-					element.style.backgroundColor = "#7e9b9e";
-					element.innerHTML = obj.entries[Number(element.getAttribute("value"))].title + "<br>" + obj.entries[Number(element.getAttribute("value"))].information[5] + " | " + obj.entries[Number(element.getAttribute("value"))].information[6];
-				});
-			}
-			// Get JSON data and call changeHighLightStatus.
-			function toggleHighLight(){
-				fetch("../data/entriesDescription.json")
-					.then(response => response.json())
-					.then(data =>{
-						changeHighLightStatus(data);
-					})	
-			}
-			// Hide or Unhide the buttons depending on the highlightStatus value. hLS should be True at the start.
-			function changeHighLightStatus(obj){
-				const buttonList = document.querySelectorAll('.updateButton');
-				const highLightButton = document.querySelector('.HighLightButton');
-				highLightStatus = !highLightStatus;
-				//check for each element, if there HighLight value is true or false. Don't do anything if it is true, since they should always be seen.
-				//If there value is false, hide them if highlightStatus is true, unhide them if highLightStatus is false. 
-				buttonList.forEach(element =>{
-					if (highLightStatus){
-						if (!(obj.entries[Number(element.getAttribute("value"))].highlighed)){
-							element.style.display = "none"; 
-						}
-						highLightButton.innerHTML = "Only Highlighted Projects";
+					if (!(obj.entries[entryNumber].description[i+1] == "") && !(obj.entries[entryNumber].description[i+2] == "")){
+						descDataAll = descDataAll + obj.entries[entryNumber].description[i+1] + "	" + obj.entries[entryNumber].description[i+2];
+					}
+					else if (!(obj.entries[entryNumber].description[i+1] == "")){
+						descDataAll = descDataAll + obj.entries[entryNumber].description[i+1];
 					}
 					else{
-						if (!(obj.entries[Number(element.getAttribute("value"))].highlighed)){
-							element.style.display = "flex"; 
-
-						}
-						highLightButton.innerHTML = "All Projects";
+						descDataAll = descDataAll + obj.entries[entryNumber].description[i+2];
 					}
-					
-				});		
+				}
+				//Add a space after the text and images
+				descDataAll = descDataAll + "<br><br>";
 			}
-		</script>
-	</div>
+
+			//Set each data of the entry
+			targetBodyDesc.innerHTML = descDataAll;
+			targetStatus.innerHTML = "Status : " + obj.entries[entryNumber].information[0];
+			targetTeam.innerHTML = "Team : " + obj.entries[entryNumber].information[1];
+			targetType.innerHTML = "Type : " + obj.entries[entryNumber].information[2];
+			targetPlateform.innerHTML = "Plateform : " + obj.entries[entryNumber].information[3];
+			targetLanguage.innerHTML = "Language : " + obj.entries[entryNumber].information[4];
+			targetStart.innerHTML = "Started : " + obj.entries[entryNumber].information[5];
+			targetEnd.innerHTML = "Ended : " + obj.entries[entryNumber].information[6];
+			targetTitle.innerHTML = obj.entries[entryNumber].title;
+			targetImage.innerHTML = obj.entries[entryNumber].entryImageIcon;
+
+			//Set the Height of the Entry List to make it take the whole screen
+			var mainHeight = targetMainBody.offsetHeight;
+			var mainHeight = mainHeight.toString()+'px';
+			console.log(mainHeight);
+			targetUpdateMenu.style.height = mainHeight;
+
+		}
+		//Get the JSON data and call SetButtonInfo, setEntry, toggleHighlight.
+		function setDefault(){
+			var jsonLenght
+			fetch('../data/entriesDescription.json')
+				.then(response => response.json())
+				.then(data =>{
+					jsonLenght = Object.keys(data.entries).length-1;
+					setButtonInfo(data);
+					setEntry(jsonLenght, 0	);
+					changeHighLightStatus(data);
+				}) 
+		}
+		//Set every buttons Data, name and dates
+		function setButtonInfo(obj){
+			const buttonList = document.querySelectorAll('.updateButton'); 
+			buttonList.forEach(element => {
+				element.style.backgroundColor = "#7e9b9e";
+				element.innerHTML = obj.entries[Number(element.getAttribute("value"))].title + "<br>" + obj.entries[Number(element.getAttribute("value"))].information[5] + " | " + obj.entries[Number(element.getAttribute("value"))].information[6];
+			});
+		}
+		// Get JSON data and call changeHighLightStatus.
+		function toggleHighLight(){
+			fetch("../data/entriesDescription.json")
+				.then(response => response.json())
+				.then(data =>{
+					changeHighLightStatus(data);
+				})	
+		}
+		// Hide or Unhide the buttons depending on the highlightStatus value. hLS should be True at the start.
+		function changeHighLightStatus(obj){
+			const buttonList = document.querySelectorAll('.updateButton');
+			const highLightButton = document.querySelector('.HighLightButton');
+			highLightStatus = !highLightStatus;
+			//check for each element, if there HighLight value is true or false. Don't do anything if it is true, since they should always be seen.
+			//If there value is false, hide them if highlightStatus is true, unhide them if highLightStatus is false. 
+			buttonList.forEach(element =>{
+				if (highLightStatus){
+					if (!(obj.entries[Number(element.getAttribute("value"))].highlighed)){
+						element.style.display = "none"; 
+					}
+					highLightButton.innerHTML = "Only Highlighted Projects";
+				}
+				else{
+					if (!(obj.entries[Number(element.getAttribute("value"))].highlighed)){
+						element.style.display = "flex"; 
+
+					}
+					highLightButton.innerHTML = "All Projects";
+				}
+				
+			});		
+		}
+	</script>
 </body>
 </html>
