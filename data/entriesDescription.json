@@ -109,19 +109,19 @@
         "",
         "",
         "This was the first project that I worked on in a group that wasn't interrupted by other things (classes with teachers, for exemple), we went about it like a 'real' project, with R&D, pre-prod and production phases. We had deadlines set by the teachers and the school, both so we could get an idea on how it would be in the working world and so we wouldn't overestime the time that have to make our project. We had about 9-ish month to make it, with R&D lasting during October, pre-prod lasting until around December and the production from January to June.",
-        "<img src=\"../images/sunder2.png\" alt=\"Sunder Panorama 2\" style=\"width:1005px;height:424px;\">",
+        "<img src=\"../images/sunder02.png\" alt=\"Sunder Panorama 2\" style=\"width:1005px;height:424px;\">",
         "",
         "I do not think I had some particular difficulties during the development of the game and on what I worked on. The respawn system is something classic, something that I'm probably bound to remake later in my life (as in, in a different project). The interesting part, I think, was mostly caused by production constraint, during the pre-production I wasn't able to make modification on the Player's blueprint (because github do not like Blueprints). I had to make an Actor Component where I put all of the code necessary to link the player to the beacon and vice versa. <br> The respawn system, when a player died, would check if it had a beacon in it's memory, if yes, it made the player respawn to the first beacon claimed that it has in memory, if it didn't have a beacon in memory, it would be game over for the player.",
-        "<img src=\"../images/sunderPing.png\" alt=\"Sunder Ping Image\" style=\"width:647px;height:375px;\">",
+        "<img src=\"../images/sunderPing01.png\" alt=\"Sunder Ping Image\" style=\"width:647px;height:375px;\">",
         "",
         "The beacons are a bit more developped and complexed than the respawn system, even if they are technically part of the respawn system. But once again, I do not think it was something very hard to make. The player has the ability to interact with one, while holding the button to interact, an animation would play out to changes the color of the beacon. <br>If the player complete the claiming process, the color (that matches the player's one) would be fixed for the remainder of the game (unless the other player interact with it). The player that claims the beacon, will be able to use it as a respawn point if they died. Both player would also see day turning into night and the player that claimed the beacon would enter the hunt mode, they would see pings on the other player's location. However, if the player didn't complete the claiming process, and just let go of the button mid-claim, the color of the beacon would decrease until the player's color has dissapear from the beacon.<br> The players also has the ability to steal the other's beacon, if a beacon has already been claimed by an other player, the player can steal it (as implied a bit above). The process is the same, aside that the player being robbed would lose the ability to use the beacon as a respawn point and the new owner of the beacon gain the same bonuses as if they had claimed an empty beacon.",
-        "<img src=\"../images/sunderAiming.png\" alt=\"Sunder Aiming Image\" style=\"width:466px;height:216px;\">",
-        "<img src=\"../images/sunderDying.png\" alt=\"Sunder Dying Image\" style=\"width:385px;height:216px;\">",
+        "<img src=\"../images/sunderAiming01.png\" alt=\"Sunder Aiming Image\" style=\"width:466px;height:216px;\">",
+        "<img src=\"../images/sunderDying01.png\" alt=\"Sunder Dying Image\" style=\"width:385px;height:216px;\">",
         "I also worked on the UI of the game, well, mostly the Main Menu UI, and the pause menu. Not a lot to say, took me some time to make because I hadn't worked on UI in a while but overhaul, it works, it's nice and I didn't have to work with Multiplayer constraint so it was even easier. I also worked on the settings of the game, took a while as well, this time because I didn't know how it worked, so I had to learn on the fly. I learnt how to make game saves, how key mapping worked, how to make audio parameters and a few other things. <br>Key mapping took a long time to figure out, and it works differently compared to the other settings that I made. The settings that i made are in widgets, one for each type of option, is it a slider ? a checkbox ? a dropbox ? a key ? The 3 first get their functions, titles and options in their respective widget and when a player make a modification, it will be sent to the settings UI where the code to handle the settings is. However, the key mapping widget only gets which key it will use as option and it will sends it's data to the Unreal Engine's native code when a player makes a modification.",
         "",
         "",
         "<h3>Conclusion</h3> My first real video game project that I worked on and saw to fruition. Nothing too complicated, aside from having to learn the multiplayer structure and how it worked, as well as learning how to make Settings and saving them. Overhaul more of a learning experience on how to work in a team rather than learning things for the project. I did enjoy working on this project a lot, even if competitive multiplayer games usually aren't my cup of tea.",
-        "<img src=\"../images/sunder1.png\" alt=\"Sunder Panorama 1\" style=\"width:1042px;height:436px;\">",
+        "<img src=\"../images/sunder01.png\" alt=\"Sunder Panorama 1\" style=\"width:1042px;height:436px;\">",
         ""
       ],
       "information" : [
@@ -133,7 +133,7 @@
         "07/10/2024",
         "20/06/2025"
       ],
-      "entryImageIcon" : "<img src=\"../images/sunderPoster.png\" alt=\"Sunder Poster\" style=\"width:289px;height:414px;\" id=\"entryImageIcon\">",
+      "entryImageIcon" : "<img src=\"../images/sunderPoster01.png\" alt=\"Sunder Poster\" style=\"width:289px;height:414px;\" id=\"entryImageIcon\">",
       "highlighed" : true
     }
   ]
