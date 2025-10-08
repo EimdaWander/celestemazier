@@ -2,7 +2,10 @@
   "entries" : [
     {
       "title" : "The Old God's Priestess",
-      "description" : "Sunder is a project that I worked (am working) on for my 3rd and final year at the ESMA School of Toulouse. The project is a video game 1v1 multiplayer shooter that takes places in a desert, with both player having access to skills and the ability to claim beacons that are used for respawning if they die.<br><br> My own personal contribution to this project was coding the beacons and respawn system, as well as working on the Main Menu UI's code, and most notably the Settings of the game. <br><br> This was (is) the first project that I worked on in a group that wasn't interrupted by other things (aka, classes with teachers, unlike during my 2nd year), we went about it like a 'real' project, with R&D, pre-prod and production phases. <br><br> I do not think I had some particular difficulties, I didn't work on the networking of the game for exemple, the beacon being the only thing that I could qualify as unique in this project (as in, something that I likely wouldn't work on again after this project) since the UI and settings would be parts that I would most likely work on again in a futur project. And it (the beacon) wasn't the most difficult thing to make, even if I had to work with production constraint, since i couldn't modify some Blueprints as GitHub doesn't handle well Blueprints file (it overwrites the whole file and not just the parts that have been modified)",
+      "description" : ["",
+        "",
+        ""
+      ],
       "information" : [
         "Ended",
         "Solo",
@@ -10,7 +13,8 @@
         "Unity",
         "C#",
         "--/01/2023",
-        "--/05/2023"
+        "--/05/2023",
+        ""
       ],
       "entryImageIcon" : "",
       "entryImageIconResolution" : [
@@ -21,7 +25,13 @@
     },
     {
       "title" : "Overtime",
-      "description" : "Sunder is a project that I worked (am working) on for my 3rd and final year at the ESMA School of Toulouse. The project is a video game 1v1 multiplayer shooter that takes places in a desert, with both player having access to skills and the ability to claim beacons that are used for respawning if they die.<br><br> My own personal contribution to this project was coding the beacons and respawn system, as well as working on the Main Menu UI's code, and most notably the Settings of the game. <br><br> This was (is) the first project that I worked on in a group that wasn't interrupted by other things (aka, classes with teachers, unlike during my 2nd year), we went about it like a 'real' project, with R&D, pre-prod and production phases. <br><br> I do not think I had some particular difficulties, I didn't work on the networking of the game for exemple, the beacon being the only thing that I could qualify as unique in this project (as in, something that I likely wouldn't work on again after this project) since the UI and settings would be parts that I would most likely work on again in a futur project. And it (the beacon) wasn't the most difficult thing to make, even if I had to work with production constraint, since i couldn't modify some Blueprints as GitHub doesn't handle well Blueprints file (it overwrites the whole file and not just the parts that have been modified)",
+      "description" : ["Made during a GameJam organized by the school I studied at. It lasted during a weekend and the project overhaul is just ... broken. Not a lot to say about it aside that it's very buggy, we went way over our heads when we tried to make it, way too ambitious. ",
+        "",
+        "",
+        "It isn't really worth going into, it was more of a learning experience than anything else, I have linked the itch.io page, but again, not really worth it to take a look. It mostly taught me to avoid working during the whole night to make things work because I won't really be able to be functional the next day with 0 hours of sleep. It also taught me to not expect to be in a team that I like (which ironically the next project I did taught me the same thing). So yeah, not the most fun Jam I did.",
+        "",
+        ""
+      ],
       "information" : [
         "Ended",
         "Team",
@@ -29,7 +39,8 @@
         "Unity",
         "C#",
         "--/02/2023",
-        "--/02/2023"
+        "--/02/2023",
+        "https://fernandes-bastiaan.itch.io/overtime"
       ],
       "entryImageIcon" : "",
       "entryImageIconResolution" : [
@@ -40,7 +51,22 @@
     },
     {
       "title" : "Les Bermudes du Nauscilla",
-      "description" : "Sunder is a project that I worked (am working) on for my 3rd and final year at the ESMA School of Toulouse. The project is a video game 1v1 multiplayer shooter that takes places in a desert, with both player having access to skills and the ability to claim beacons that are used for respawning if they die.<br><br> My own personal contribution to this project was coding the beacons and respawn system, as well as working on the Main Menu UI's code, and most notably the Settings of the game. <br><br> This was (is) the first project that I worked on in a group that wasn't interrupted by other things (aka, classes with teachers, unlike during my 2nd year), we went about it like a 'real' project, with R&D, pre-prod and production phases. <br><br> I do not think I had some particular difficulties, I didn't work on the networking of the game for exemple, the beacon being the only thing that I could qualify as unique in this project (as in, something that I likely wouldn't work on again after this project) since the UI and settings would be parts that I would most likely work on again in a futur project. And it (the beacon) wasn't the most difficult thing to make, even if I had to work with production constraint, since i couldn't modify some Blueprints as GitHub doesn't handle well Blueprints file (it overwrites the whole file and not just the parts that have been modified)",
+      "description" : ["Les Bermudes du Nauscilla (The Nauscilla's Bermuda in english) is a first person Puzzle-Horror game with a unique aesthetic mostly inspired by the game Return of the Obra Dinn. This project was done alongside regular classes during my Second Year at the school I studied in, we had less time to work on it compared to our third year but it was the first time we worked on making a game in a team (not counting Game Jams).<br>My main role in this project was the only programmer during the first half of the development and when an other team fused with us, I was mostly a programmer as well as a rigger.",
+        "",
+        "",
+        "I mostly worked on the mechanics related to hiding and fleeing. The main contribution being my work on the Lighthouse, which as two side that can be independently changed to one of the 3 colors, red, blue and purple. Each colors as different mechanics, with blue allowing some clues to be shown and interacted with. Red showing the monster and allowing him to move and touch the player (which he can't do during a blue phase) and purple doing both at the same time. The trick in itself is that since the colours come form a lighthouse, the colors change depending on which side the lighthouse is showing. With the colours of the lighthouse changing when the player progresses the story.<br> The Ai itself of the monster is a pretty simple one, when he is allowed to move and do things (aka during red and purple) he will either move towards the player and when the player is touched, game over. Or if the player is hidden, he will roam arround without a purpose, until the player stops hidding again.",
+        "",
+        "",
+        "Speaking about hiding, the player as the possibility to hide under or inside some object, which, as said above, make the monsters roam around. I also worked on the inventory system, even if you can't really do much with it, you can just see what is in there. Something I worked on as well is the main menu, settings and UI of the game, not a lot to be said here.",
+        "",
+        "",
+        "Overhaul not a bad experience, I can't really say it was the most fun project I worked on (might have a little burnout at some point) but it was quite interesting, and the aesthetic of the game itself is quite an interesting one even if I'm personally not a fan of Horror game as whole. Oh and it was one of the first game were there as been voice acting (thanks to our english teacher).",
+        "",
+        "",
+        "<h3>RISK OF EPILEPSY</h3><br>I am not really versed into epilepsy and how it works but I do feel like, if you ever want to try this game out, it may causes some problem if you are photosensitive.",
+        "",
+        ""
+      ],
       "information" : [
         "Finished",
         "Team",
@@ -48,7 +74,8 @@
         "Unreal Engine 5.4",
         "Blueprints",
         "--/08/2023",
-        "29/05/2024"
+        "29/05/2024",
+        "https://ryan-narutail-dias.itch.io/les-bermudes-du-nauscilla"
       ],
       "entryImageIcon" : "",
       "entryImageIconResolution" : [
@@ -59,7 +86,10 @@
     },
     {
       "title" : "RATé",
-      "description" : "Sunder is a project that I worked (am working) on for my 3rd and final year at the ESMA School of Toulouse. The project is a video game 1v1 multiplayer shooter that takes places in a desert, with both player having access to skills and the ability to claim beacons that are used for respawning if they die.<br><br> My own personal contribution to this project was coding the beacons and respawn system, as well as working on the Main Menu UI's code, and most notably the Settings of the game. <br><br> This was (is) the first project that I worked on in a group that wasn't interrupted by other things (aka, classes with teachers, unlike during my 2nd year), we went about it like a 'real' project, with R&D, pre-prod and production phases. <br><br> I do not think I had some particular difficulties, I didn't work on the networking of the game for exemple, the beacon being the only thing that I could qualify as unique in this project (as in, something that I likely wouldn't work on again after this project) since the UI and settings would be parts that I would most likely work on again in a futur project. And it (the beacon) wasn't the most difficult thing to make, even if I had to work with production constraint, since i couldn't modify some Blueprints as GitHub doesn't handle well Blueprints file (it overwrites the whole file and not just the parts that have been modified)",
+      "description" : ["",
+        "",
+        ""
+      ],
       "information" : [
         "Finished",
         "Team",
@@ -67,7 +97,8 @@
         "Unreal Engine 5.4",
         "Blueprints",
         "--/02/2024",
-        "--/02/2024"
+        "--/02/2024",
+        ""
       ],
       "entryImageIcon" : "",
       "entryImageIconResolution" : [
@@ -79,7 +110,19 @@
     {
       "title" : "This Website Portfolio",
       "description" : [
-        "This project is ... well, what you are currently seeing, this website. I had the want/need to make one for a bit, and with me being in my last year of my studies. I needed to make a portfolio, and then came the idea of making it from scratch, on my own. I can't say it was easy, as I had to learn HTML, CSS and Javascript with zero knowledge about them. But it is a fun project, that I am going to keep working on and upgrading, at least that's my plan for the forseeable future. <br><br> As I am writing this, I am still working on it, it's still a Work In Progress, I still have quite a bit to do, even if things are starting to take shape. But I'm enjoying it, even if it's taking time. I'll write something a bit more professional later as, well, I'm not going to publish it like that.",
+        "This project page is about the current website you are seeing. It is a website I made to present all of my different project i made over the years, be they good or bad. This project is still ongoing and will probably never really be finished since I'm sure I will always find something to add or change to make this website better. It's currently hosted thanks to github's webpages but that might change and end up being hosted somewhere else in the future.",
+        "",
+        "",
+        "This website uses HTML, CSS and Javascript to make it work, which I had to learn from 0 to make it, partly the reason it took so long to be completed. It is separated in 3 main pages, the main page, aka Home, where I talk a little bit about what this place is as well as some highlights of my projects. The last page which is the About Me, where I talk about me, what my skills are, what coding languages I can write in and comprehend. And last, but definitly not least, the middle page, aka the Project page.",
+        "",
+        "",
+        "The Project page is the most complicated and filled of the three, which a list on the left that serves at showing what projects I have logged and made. A highlight button exist to show (from the start) the highlighted project I made or worked on, as most of the projects I made aren't really worth showcasing but I personally still feel like they should be shown, at least to show how far I've come as well as all of the failure and bad projects I made. <br> Whenever an entry button is clicked the website will read a json file that contains all of the various data of those entires, from the current Status to the dates and as well as all of the main body text, the one you are currently reading. This system makes it so it's pretty easy to have one uniform way for me to enter a new project without having to remake everything. It also allows to put images between the paragraphs of the main body, so it's not as dull and breaks the monotony of reading through swaths of text ",
+        "",
+        "",
+        "Some things that I'd like to mention about this website as well, is the grey bar that serves as background for the list of entries, it doesn't look like it (which is how it's supposed to be) but it changes it's height dynamically depending on the height of the main body. It works quite well and is such a simple fix that I'm pretty happy about, and it avoids having a weird stop in the height of the element, or having it go further than it should in a short entry. <br> The bottom of each pages is also filled with a footer, to close the page nicely and not have a somewhat weird and empty bottom of the page.",
+        "",
+        "",
+        "Overhaul a nice project which I'm quiet proud of, and one that I keep working on to make it better and better, both visually (it was quite an eyesore before) and for me to code or add entries, make it as smooth as possible. This project also taught me how to make a website, which I had no clue how to do so before, I am still learning how to make things of course, because you never stop learning, even in a field you might think you know everything.",
         "",
         ""
       ],
@@ -90,7 +133,8 @@
         "Browser",
         "HTML, CSS, JS",
         "20/08/2024",
-        "--/--/----"
+        "--/--/----",
+        ""
       ],
       "entryImageIcon" : "",
       "entryImageIconResolution" : [
@@ -131,7 +175,8 @@
         "Unreal Engine 5.4",
         "Blueprints",
         "07/10/2024",
-        "20/06/2025"
+        "20/06/2025",
+        "https://linbeuk.itch.io/sunder"
       ],
       "entryImageIcon" : "<img src=\"../images/sunderPoster01.png\" alt=\"Sunder Poster\" style=\"width:289px;height:414px;\" id=\"entryImageIcon\">",
       "highlighed" : true

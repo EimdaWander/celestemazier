@@ -45,6 +45,7 @@
 					<li class="infoList" id="languageText">Language : Default</li>
 					<li class="infoList" id="startText">Started : Default</li>
 					<li class="infoList" id="endText">Ended : Default</li>
+					<li class="infoList" id="projectLink"></li>
 
 				</ul>
 				<div id="entryImageIconContainer">
@@ -98,6 +99,7 @@
 			const targetEnd = document.querySelector('#endText');
 			const targetTitle = document.querySelector('#titleText');
 			const targetImage = document.querySelector('#entryImageIconContainer');
+			const targetProjectLink = document.querySelector('#projectLink');
 
 			const targetMainBody = document.querySelector('#mainBody');
 			const targetUpdateMenu = document.querySelector('#updateMenu');
@@ -151,11 +153,19 @@
 			targetEnd.innerHTML = "Ended : " + obj.entries[entryNumber].information[6];
 			targetTitle.innerHTML = obj.entries[entryNumber].title;
 			targetImage.innerHTML = obj.entries[entryNumber].entryImageIcon;
+			//Checks if there is a link, if yes, check what link it is about
+			if (obj.entries[entryNumber].information[7] == ""){
+				targetProjectLink.innerHTML = "";
+			}
+			else if(obj.entries[entryNumber].information[7].includes("itch.io")){
+				projectLink = obj.entries[entryNumber].information[7];
+				targetProjectLink.innerHTML = "<a href=" + projectLink + ">itch.io</a>"
+			}
+			
 
 			//Set the Height of the Entry List to make it take the whole screen
 			var mainHeight = targetMainBody.offsetHeight;
 			var mainHeight = mainHeight.toString()+'px';
-			console.log(mainHeight);
 			targetUpdateMenu.style.height = mainHeight;
 
 		}
