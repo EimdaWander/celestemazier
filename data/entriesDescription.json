@@ -2,7 +2,19 @@
   "entries" : [
     {
       "title" : "The Old God's Priestess",
-      "description" : ["",
+      "description" : ["The Old God's Priestess is a 2D Plateformer with some stealth mechanics made with Unity in a Pixel Art style, it is also my very firs tvideo game that I made and the first video game that I made in solo. It was made for the end of my first year, the project started around january and ended around may, so around 5-6 month to work on it, while classes were still ongoing. I saw a bit too big for what skills I had at the time, the game is technically completable, but there are some many things that are broken or just plain missing.",
+        "",
+        "",
+        "As said just before, the game is a 2D Plateformer with stealth, the player as access to a few skills, one that allows the Priestess (that player's character) to teleport in front of her, allowing to cross some distance. An other skills is the fox transformation, allowing the Priestess to take her fox form, allowing her to move faster, jump higher and go into small holes. An other skill can be used if the player sneaks behind a guard and after a few moments of pressing a button makes the guard dissapear. Aside from that the player can jump and go left and right.",
+        "",
+        "",
+        "The Player can be detected by guards if they stay too long in their field of view (their cones of vision). The goal of the player being to reach the end of the (rather short) level. Not too much to be said, I could speak of the numerous things that should have been in the game or that I just wanted to add to make things better, but let's just talk about what is missing or what I did wrong.",
+        "",
+        "",
+        "A lot of things are currently missing, a lot of animations from the guards, a lot of their behaviours as well. The rather nauseating background, the background scrolls at different speed, if done well it gives the impression of depth, but since it's been done badly on my part, it just looks pretty bad. There exist a difficulty options, they do work but it's not been really well made or thought at all. The level design itself hasn't been thought too deeply as well. Overhaul a lot of things haven't been given as much thought as they should have gotten, it ended up with a half baked game, with a lot of things missing, broken or just badly done. One of the most egrerious problem is the font used for a lot of the in-game text, a lot of the texts is in an elegant and/or complicated font that makes it hard to read properly.",
+        "",
+        "",
+        "<h3>Conclusion</h3> A lot of broken, missing, or just badly done things. One of my first project, which I am weirdly proud seeing how much things are not done. It might not be a good game, or even a finished one, it still allowed me to learn so much things that helped me later down on how I should be working, how I should code, that I should comment all of my code. A huge learning experience overhaul and pretty fun, even if I couldn't do everything that i had wanted to do. I might end up re-doing it one day, who knows, I like the idea, the concept, not so much the execution.",
         "",
         ""
       ],
@@ -14,18 +26,14 @@
         "C#",
         "--/01/2023",
         "--/05/2023",
-        ""
+        "https://eimdawander.itch.io/togp"
       ],
-      "entryImageIcon" : "",
-      "entryImageIconResolution" : [
-        "500px",
-        "500px"
-      ],
+      "entryImageIcon" : "<img src=\"../images/TOGP_Logo.png\" alt=\"The Old God's Priestess' Logo\" style=\"width:256px;height:256px;\" id=\"entryImageIcon\">",
       "highlighed" : false
     },
     {
       "title" : "Overtime",
-      "description" : ["Made during a GameJam organized by the school I studied at. It lasted during a weekend and the project overhaul is just ... broken. Not a lot to say about it aside that it's very buggy, we went way over our heads when we tried to make it, way too ambitious. ",
+      "description" : ["Made during a GameJam organized by the school I studied at. It lasted during a weekend and the project overhaul is just ... broken. Not a lot to say about it aside that it's very buggy, we went way over our heads when we tried to make it, way too ambitious.",
         "",
         "",
         "It isn't really worth going into, it was more of a learning experience than anything else, I have linked the itch.io page, but again, not really worth it to take a look. It mostly taught me to avoid working during the whole night to make things work because I won't really be able to be functional the next day with 0 hours of sleep. It also taught me to not expect to be in a team that I like (which ironically the next project I did taught me the same thing). So yeah, not the most fun Jam I did.",
@@ -86,7 +94,10 @@
     },
     {
       "title" : "RATé",
-      "description" : ["",
+      "description" : ["RATé (which is a play on words with the french word for rat and missed/failed) is a 5 minutes long game made for a Game Jam that lasted over a wekk end and that was organized by the School I studied at. It's almost a complete oposite compared to my first game Jam seeing how little there is to do in the game, in a good way since the game is actually finished and I had fun doing it; ",
+        "",
+        "",
+        "Not a lot to be said about this one, it's a 2D plateformer where you control a rat escapping a laboratory. You have some plateforming to do but it's not anything too hard, the most complicated thing you might find is playing around some of the jank physics that exists. Overhaul, a pretty short game, not a lot to be said about it seeing how short it is and how little time we had to do it, I was working on Coding the whole thing, not a lot to be said here from my point of view as the mechanics are really simple.",
         "",
         ""
       ],
@@ -98,7 +109,7 @@
         "Blueprints",
         "--/02/2024",
         "--/02/2024",
-        ""
+        "https://eimdawander.itch.io/rate"
       ],
       "entryImageIcon" : "",
       "entryImageIconResolution" : [
